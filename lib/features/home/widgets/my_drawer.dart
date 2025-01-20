@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../widgets/widgets.dart';
 import 'widgets.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -108,7 +109,7 @@ class MyDrawer extends StatelessWidget {
               ),
             ),
           ),
-          SettingsField(
+          GenerallField(
             icon: Icon(
               Icons.add,
               size: 30,
@@ -119,7 +120,7 @@ class MyDrawer extends StatelessWidget {
           Divider(
             color: Colors.grey[300],
           ),
-          SettingsField(
+          GenerallField(
             icon: Icon(
               Icons.person_2_sharp,
               size: 30,
@@ -130,7 +131,7 @@ class MyDrawer extends StatelessWidget {
           Divider(
             color: Colors.grey[300],
           ),
-          SettingsField(
+          GenerallField(
             icon: Icon(
               Icons.person_add_alt_sharp,
               size: 30,
@@ -138,7 +139,7 @@ class MyDrawer extends StatelessWidget {
             ),
             text: "New Group",
           ),
-          SettingsField(
+          GenerallField(
             icon: Icon(
               Icons.personal_injury,
               size: 30,
@@ -146,7 +147,7 @@ class MyDrawer extends StatelessWidget {
             ),
             text: "Contacts",
           ),
-          SettingsField(
+          GenerallField(
             icon: Icon(
               Icons.phone,
               size: 30,
@@ -154,7 +155,7 @@ class MyDrawer extends StatelessWidget {
             ),
             text: "Calls",
           ),
-          SettingsField(
+          GenerallField(
             icon: Icon(
               Icons.save_alt_outlined,
               size: 30,
@@ -162,7 +163,7 @@ class MyDrawer extends StatelessWidget {
             ),
             text: "Saved Messages",
           ),
-          SettingsField(
+          GenerallField(
             icon: Icon(
               Icons.settings,
               size: 30,
@@ -173,7 +174,7 @@ class MyDrawer extends StatelessWidget {
           Divider(
             color: Colors.grey[300],
           ),
-          SettingsField(
+          GenerallField(
             icon: Icon(
               Icons.phone,
               size: 30,
@@ -181,7 +182,7 @@ class MyDrawer extends StatelessWidget {
             ),
             text: "Invite Friends",
           ),
-          SettingsField(
+          GenerallField(
             icon: Icon(
               Icons.save_alt_outlined,
               size: 30,

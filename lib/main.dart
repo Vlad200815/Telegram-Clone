@@ -1,6 +1,6 @@
+import 'package:cool_design_practise/features/add_chat/add_chat.dart';
 import 'package:cool_design_practise/features/search/view/view.dart';
 import 'package:flutter/material.dart';
-
 import 'features/home/view/view.dart';
 import 'theme/theme.dart';
 
@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => HomeScreen(),
         "/search": (context) => SearchScreen(),
+        "/add_chat": (context) => AddChatScreen(),
       },
     );
   }

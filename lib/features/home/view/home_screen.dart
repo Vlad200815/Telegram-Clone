@@ -1,5 +1,6 @@
+import 'package:cool_design_practise/features/functions/functions.dart';
 import 'package:flutter/material.dart';
-
+import '../../../widgets/widgets.dart';
 import '../widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -35,11 +36,9 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       drawer: MyDrawer(),
-      floatingActionButton: FloatingActionButton(
-        shape: CircleBorder(),
-        backgroundColor: theme.colorScheme.primary,
-        onPressed: () {},
-        child: Icon(
+      floatingActionButton: MyFloatingButton(
+        onPressed: () => goToAddScreen(context),
+        icon: Icon(
           Icons.edit,
           color: theme.colorScheme.secondary,
         ),
@@ -96,7 +95,7 @@ class HomeScreen extends StatelessWidget {
                 );
               },
             ),
-          )
+          ),
         ],
       ),
     );

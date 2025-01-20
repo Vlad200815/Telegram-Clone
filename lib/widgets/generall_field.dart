@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SettingsField extends StatelessWidget {
-  const SettingsField({
+class GenerallField extends StatelessWidget {
+  const GenerallField({
     super.key,
     required this.icon,
     required this.text,
