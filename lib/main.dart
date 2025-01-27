@@ -1,4 +1,5 @@
 import 'package:cool_design_practise/features/add_chat/add_chat.dart';
+import 'package:cool_design_practise/features/profile/profile.dart';
 import 'package:cool_design_practise/features/search/view/view.dart';
 import 'package:flutter/material.dart';
 import 'features/home/view/view.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         "/": (context) => HomeScreen(),
         "/search": (context) => SearchScreen(),
         "/add_chat": (context) => AddChatScreen(),
+        "/profile": (context) => ProfileScreen(),
       },
     );
   }

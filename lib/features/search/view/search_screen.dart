@@ -21,7 +21,7 @@ class SearchScreen extends StatelessWidget {
               Row(
                 children: [
                   IconButton(
-                    onPressed: () => goBackToHome(context),
+                    onPressed: () => goBack(context),
                     icon: Icon(Icons.arrow_back),
                   ),
                   const SizedBox(width: 20),
@@ -30,50 +30,50 @@ class SearchScreen extends StatelessWidget {
                   )
                 ],
               ),
-              // Expanded(
-              //   child: ListView.builder(
-              //     itemCount: 10,
-              //     itemBuilder: (context, index) {
-              //       return Padding(
-              //         padding: const EdgeInsets.symmetric(
-              //           vertical: 10,
-              //           horizontal: 10,
-              //         ),
-              //         child: Column(
-              //           children: [
-              //             Row(
-              //               children: [
-              //                 RoundAccount(demention: 60),
-              //                 const SizedBox(width: 15),
-              //                 Column(
-              //                   mainAxisAlignment: MainAxisAlignment.start,
-              //                   crossAxisAlignment: CrossAxisAlignment.start,
-              //                   children: [
-              //                     Text(
-              //                       "Dima",
-              //                       style: theme.textTheme.bodyLarge,
-              //                     ),
-              //                     Text(
-              //                       "last seen at 19:36",
-              //                       style: theme.textTheme.bodyMedium!.copyWith(
-              //                         color: Colors.grey,
-              //                       ),
-              //                     ),
-              //                   ],
-              //                 ),
-              //               ],
-              //             ),
-              //             const SizedBox(height: 15),
-              //             Divider(
-              //               height: 0.5,
-              //               color: Colors.grey[100],
-              //             )
-              //           ],
-              //         ),
-              //       );
-              //     },
-              //   ),
-              // ),
+              Expanded(
+                child: ListView.builder(
+                  itemCount: 10,
+                  itemBuilder: (context, index) {
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 10,
+                        horizontal: 10,
+                      ),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              RoundAccount(demention: 60),
+                              const SizedBox(width: 15),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Dima",
+                                    style: theme.textTheme.bodyLarge,
+                                  ),
+                                  Text(
+                                    "last seen at 19:36",
+                                    style: theme.textTheme.bodyMedium!.copyWith(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 15),
+                          Divider(
+                            height: 0.5,
+                            color: Colors.grey[100],
+                          )
+                        ],
+                      ),
+                    );
+                  },
+                ),
+              ),
             ],
           ),
         ),

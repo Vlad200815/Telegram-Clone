@@ -1,3 +1,4 @@
+import 'package:cool_design_practise/features/functions/functions.dart';
 import 'package:flutter/material.dart';
 
 import '../../../widgets/widgets.dart';
@@ -72,55 +73,56 @@ class MyDrawer extends StatelessWidget {
               ],
             ),
           ),
-          Material(
-            color: Colors.transparent,
-            child: InkWell(
-              onTap: () {},
-              child: Container(
-                color: Colors.transparent,
-                height: 60,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    const SizedBox(width: 18),
-                    Stack(
-                      clipBehavior: Clip.none,
-                      children: [
-                        RoundAccount(
-                          demention: 50,
-                        ),
-                        Positioned(
-                          bottom: 0,
-                          right: 20,
-                          child: MyBadge(),
-                        ),
-                      ],
-                    ),
-                    SizedBox(width: MediaQuery.of(context).size.width / 30),
-                    Text(
-                      "Vlad Semeniuk",
-                      textAlign: TextAlign.start,
-                      style: theme.textTheme.titleMedium!.copyWith(
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
+          // Material(
+          //   color: Colors.transparent,
+          //   child: InkWell(
+          //     onTap: () {},
+          //     child: Container(
+          //       color: Colors.transparent,
+          //       height: 60,
+          //       child: Row(
+          //         mainAxisAlignment: MainAxisAlignment.start,
+          //         children: [
+          //           const SizedBox(width: 18),
+          //           Stack(
+          //             clipBehavior: Clip.none,
+          //             children: [
+          //               RoundAccount(
+          //                 demention: 50,
+          //               ),
+          //               Positioned(
+          //                 bottom: 0,
+          //                 right: 20,
+          //                 child: MyBadge(),
+          //               ),
+          //             ],
+          //           ),
+          //           SizedBox(width: MediaQuery.of(context).size.width / 30),
+          //           Text(
+          //             "Vlad Semeniuk",
+          //             textAlign: TextAlign.start,
+          //             style: theme.textTheme.titleMedium!.copyWith(
+          //               color: Colors.black,
+          //             ),
+          //           ),
+          //         ],
+          //       ),
+          //     ),
+          //   ),
+          // ),
+          // GenerallField(
+          //   icon: Icon(
+          //     Icons.add,
+          //     size: 30,
+          //     color: Colors.grey[400],
+          //   ),
+          //   text: "Add Account",
+          // ),
+          // Divider(
+          //   color: Colors.grey[300],
+          // ),
           GenerallField(
-            icon: Icon(
-              Icons.add,
-              size: 30,
-              color: Colors.grey[400],
-            ),
-            text: "Add Account",
-          ),
-          Divider(
-            color: Colors.grey[300],
-          ),
-          GenerallField(
+            onTap: () => goToProfileScreen(context),
             icon: Icon(
               Icons.person_2_sharp,
               size: 30,
@@ -132,6 +134,7 @@ class MyDrawer extends StatelessWidget {
             color: Colors.grey[300],
           ),
           GenerallField(
+            onTap: () {},
             icon: Icon(
               Icons.person_add_alt_sharp,
               size: 30,
@@ -140,6 +143,7 @@ class MyDrawer extends StatelessWidget {
             text: "New Group",
           ),
           GenerallField(
+            onTap: () {},
             icon: Icon(
               Icons.personal_injury,
               size: 30,
@@ -148,6 +152,7 @@ class MyDrawer extends StatelessWidget {
             text: "Contacts",
           ),
           GenerallField(
+            onTap: () {},
             icon: Icon(
               Icons.phone,
               size: 30,
@@ -156,6 +161,7 @@ class MyDrawer extends StatelessWidget {
             text: "Calls",
           ),
           GenerallField(
+            onTap: () {},
             icon: Icon(
               Icons.save_alt_outlined,
               size: 30,
@@ -164,6 +170,7 @@ class MyDrawer extends StatelessWidget {
             text: "Saved Messages",
           ),
           GenerallField(
+            onTap: () {},
             icon: Icon(
               Icons.settings,
               size: 30,
@@ -175,6 +182,7 @@ class MyDrawer extends StatelessWidget {
             color: Colors.grey[300],
           ),
           GenerallField(
+            onTap: () {},
             icon: Icon(
               Icons.phone,
               size: 30,
@@ -183,6 +191,7 @@ class MyDrawer extends StatelessWidget {
             text: "Invite Friends",
           ),
           GenerallField(
+            onTap: () {},
             icon: Icon(
               Icons.save_alt_outlined,
               size: 30,
